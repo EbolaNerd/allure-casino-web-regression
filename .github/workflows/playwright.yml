@@ -24,7 +24,7 @@ jobs:
         allure-project-id: 1
     - run: allurectl watch -- npx playwright test
       env: 
-        ALLURE_RESULTS: build/allure-results
+        ALLURE_RESULTS: allure-results
 
 
 
