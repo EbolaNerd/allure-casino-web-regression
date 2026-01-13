@@ -1,9 +1,22 @@
 name: Casino Web Regression Test
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
+
+  workflow_dispatch:
+    inputs:
+      ALLURE_JOB_RUN_ID:
+        description: "ALLURE_JOB_RUN_ID service parameter. Leave blank."
+        required: false
+      ALLURE_USERNAME:
+        description: "ALLURE_USERNAME service parameter. Leave blank"
+        required: false
+
+env:
+ ALLURE_RESULTS: allure-results
+ ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
+ ALLURE_USERNAME: ${{ github.event.inputs.ALLURE_USERNAME }}
+
 jobs:
   test:
     timeout-minutes: 60
@@ -23,8 +36,8 @@ jobs:
         allure-token: ${{ secrets.ALLURE_TOKEN }}
         allure-project-id: 1
     - run: allurectl watch -- npx playwright test
-      env: 
-        ALLURE_RESULTS: allure-results
+      #env: 
+       # ALLURE_RESULTS: allure-results
 
 
 
