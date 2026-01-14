@@ -1,4 +1,4 @@
-name: Casino API Regression Test
+name: Casino API Regression Test (POSTMAN)
 on:
   push:
     branches: [ main ]
