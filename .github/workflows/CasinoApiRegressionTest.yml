@@ -37,7 +37,7 @@ jobs:
         allure-endpoint: https://lawo.testops.cloud
         allure-token: ${{ secrets.ALLURE_TOKEN }}
         allure-project-id: 1
-    - run: allurectl watch -- https://api.getpostman.com/collections/12435063-f646f5d8-c666-43d6-8141-181a3fc5a552?apikey=${{secrets.POSTMAN_TOKEN}}
+    - run: allurectl watch -- https://api.getpostman.com/collections/12435063-f646f5d8-c666-43d6-8141-181a3fc5a552?apikey=${{secrets.POSTMAN_TOKEN}} -r allure
       #env: 
        # ALLURE_RESULTS: allure-results
 
