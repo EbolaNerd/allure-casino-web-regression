@@ -40,7 +40,7 @@ jobs:
     - name: Run Newman with Allure
       run: |
         allurectl watch -- \
-          newman run "https://api.getpostman.com/collections/12435063-f646f5d8-c666-43d6-8141-181a3fc5a552?apikey=${{ secrets.POSTMAN_TOKEN }}" \
+          newman run "https://api.getpostman.com/collections/12435063-f646f5d8-c666-43d6-8141-181a3fc5a552?apikey=${{ secrets.ALLURE_POSTMAN }}" \
           -r cli,allure \
           --reporter-allure-resultsDir $ALLURE_RESULTS
 
