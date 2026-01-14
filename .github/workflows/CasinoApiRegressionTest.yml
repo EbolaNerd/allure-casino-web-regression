@@ -44,9 +44,6 @@ jobs:
           -r cli,allure \
           --reporter-allure-export $ALLURE_RESULTS
 
-      #env: 
-       # ALLURE_RESULTS: allure-results
-
 
 
         
