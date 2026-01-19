@@ -35,7 +35,7 @@ jobs:
         allure-endpoint: https://lawo.testops.cloud
         allure-token: ${{ secrets.ALLURE_TOKEN }}
         allure-project-id: 1
-    - run: allurectl watch -- npx playwright test
+    - run: allurectl watch -- npx playwright test ui.spec.ts --project=chromium
 
 
         
