@@ -41,7 +41,7 @@ test.describe('Om Os', ()=> {
           },
           {
             text: 'Spillemyndighedens hjælpelinje til ansvarligt spil.',
-            url: 'https://www.stopspillet.dk/',
+            url: 'https://www.stopspillet.dk/2',
           },
           {
             text: 'Danske Spil koncernen kontrolleres af Spillemyndigheden',
