@@ -16,6 +16,11 @@ test.describe('Om Os', ()=> {
       //Navigate to root page  
        await page.goto('https://danskespil.dk/om');
       })
+
+      test.afterEach(async ({page}) => {
+      //Close browser  
+       await page.close();
+      })
       
       test('Verify hero section', async ({page}) => {
         //Create page object
@@ -41,7 +46,7 @@ test.describe('Om Os', ()=> {
           },
           {
             text: 'Spillemyndighedens hjælpelinje til ansvarligt spil.',
-            url: 'https://www.stopspillet.dk/2',
+            url: 'https://www.stopspillet.dk/',
           },
           {
             text: 'Danske Spil koncernen kontrolleres af Spillemyndigheden',
