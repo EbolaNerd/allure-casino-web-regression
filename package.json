@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test ui.spec.ts --project=chromium"
+    "test": "npx playwright test omOs.spec.ts --project=chromium"
   },
   "keywords": [],
   "author": "",
