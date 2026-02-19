@@ -50,7 +50,7 @@ test.describe('Om Os', ()=> {
           },
           {
             text: 'Danske Spil koncernen kontrolleres af Spillemyndigheden',
-            url: 'https://www.spillemyndigheden.dk/',
+            url: 'https://www.spillemyndigheden.dk2/',
           },
         ];
         //Find, execute and assert compliance items links
